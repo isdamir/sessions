@@ -1,28 +1,9 @@
-// Package sessions contains middleware for easy session management in Martini.
-//
-//  package main
-//
-//  import (
-//    "github.com/go-martini/martini"
-//    "github.com/martini-contrib/sessions"
-//  )
-//
-//  func main() {
-// 	  m := martini.Classic()
-//
-// 	  store := sessions.NewCookieStore([]byte("secret123"))
-// 	  m.Use(sessions.Sessions("my_session", store))
-//
-// 	  m.Get("/", func(session sessions.Session) string {
-// 		  session.Set("hello", "world")
-// 	  })
-//  }
 package sessions
 
 import (
-	"github.com/go-martini/martini"
 	"github.com/gorilla/context"
 	"github.com/gorilla/sessions"
+	"github.com/isdamir/martini"
 	"log"
 	"net/http"
 )
