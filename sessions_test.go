@@ -8,6 +8,9 @@ import (
 	"testing"
 )
 
+func Test_Sessions_Mongo(t *testing.T) {
+
+}
 func Test_Sessions(t *testing.T) {
 	m := martini.Classic()
 
